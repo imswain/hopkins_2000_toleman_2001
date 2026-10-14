@@ -1,0 +1,15 @@
+{{ define "main" }}
+<form class="entry-form">
+	<div class="question">
+		<label for="captcha">
+			{{ with resources.Get "images/captchas/placeholder.png" }}
+			<img src="{{ .RelPermalink }}" />
+			{{ end }}
+		</label>
+	</div>
+	<div class="textbox">
+		<input type="text" id="captcha" />
+		<button onclick="event.preventDefault();if(document.getElementById('captcha').value)window.location.href='{{ "poems/" | relURL }}';">Submit</button>
+	</div>
+</form>
+{{ end }}
