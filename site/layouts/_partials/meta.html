@@ -2,6 +2,7 @@
 <title>{{ .Page.Title }}</title>
 {{ $style := resources.Get "styles.css" | resources.Minify | resources.Fingerprint }}
 <link rel="stylesheet" href="{{ $style.Permalink }}">
-{{ $script:= resources.Get "js/script.js" | js.Build | resources.Fingerprint }}
-<script src="{{ $script.Permalink }}"></script>
-  
+{{ $poems := relURL "/poems" }}
+{{ $opts := dict "params" (dict "poemURL" $poems) }}
+{{ $script := resources.Get "js/script.js" | js.Build $opts }}
+<script defer src="{{ $script.Permalink }}"></script>

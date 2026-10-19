@@ -1,15 +1,16 @@
 {{ define "main" }}
-<form class="entry-form">
-	<div class="question">
-		<label for="captcha">
-			{{ with resources.Get "images/captchas/placeholder.png" }}
-			<img src="{{ .RelPermalink }}" />
-			{{ end }}
-		</label>
+<form>
+	<label for="captcha">
+		{{ with resources.Get "images/captchas/placeholder.png" }}
+		<img src="{{ .RelPermalink }}" />
+		{{ end }}
+	</label>
+	<div class="submit-container">
+		<input type="text" id="captcha" required/>
+		<button id="submit">Submit</button>
 	</div>
-	<div class="textbox">
-		<input type="text" id="captcha" />
-		<button onclick="event.preventDefault();if(document.getElementById('captcha').value)window.location.href='{{ "poems/" | relURL }}';">Submit</button>
-	</div>
+	<noscript>
+		JavaScript must be enabled for this page to function as intended.
+	</noscript>
 </form>
 {{ end }}

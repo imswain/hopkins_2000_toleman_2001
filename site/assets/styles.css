@@ -1,27 +1,41 @@
-.entry-form {
+html, body {
+	margin: 0;
+	padding: 0;
 	height: 100%;
 	width: 100%;
+	font-family: Helvetica, Arial, sans-serif;
+}
+
+form {
+	inset: 0px;
+	margin: auto;
+	position: fixed;
 	display: flex;
 	justify-content: center;
+	align-items: center;
+	flex-direction: column;
 }
 
 img {
 	width: 30vw;
 }
 
-.textbox {
-	position: absolute;
-	top: 66vh;
-}
-
-.question {
-	margin-top: 40vh;
-}
-
-.navbar {
-	width: 100%;
+nav {
 	display: flex;
-	justify-content: right;
+	justify-content: end;
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+}
+
+nav ul {
+	list-style-type: none;
+	padding-left: 0px;
+}
+
+nav li {
+	display: inline;
+	margin-right: 10px;
 }
 
 .poems {

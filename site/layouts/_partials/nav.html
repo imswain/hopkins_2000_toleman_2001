@@ -1,0 +1,10 @@
+<nav>
+	<ul>
+		{{ if ne .Path (relURL "/poems")}}
+		<li><a href="{{ relURL "/poems" }}">home</a></li>
+		{{ end }}
+		{{ if ne .Path (relURL "/about")}}
+		<li><a href="{{ relURL "/about" }}">about</a></li>
+		{{ end }}
+	</ul>
+</nav>
