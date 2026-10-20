@@ -1,9 +1,14 @@
 {{ define "main" }}
 {{ partial "nav.html" . }}
-<div class="poems">
-	<div class="hopkins-list">
-		<h1>hopkins2000</h1>
+<div class="index">
+	<div class="hopkins_2000">
+		<h1>hopkins_2000</h1>
 		<ul>
+			{{ range .Pages }}
+				{{ if strings.Contains .Path "hopkins_2000"}}
+				<li><a href="{{ .RelPermalink }}">{{ .File.BaseFileName }}</a></li>
+				{{ end }}
+			{{ end }}
 			<li>Poem</li>
 			<li>Poem</li>
 			<li>Poem</li>
@@ -11,9 +16,14 @@
 			<li>Poem</li>
 		</ul>
 	</div>
-	<div class="toleman-list">
-		<h1>toleman2001</h1>
+	<div class="toleman_2001">
+		<h1>toleman_2001</h1>
 		<ul>
+			{{ range .Pages }}
+				{{ if strings.Contains .Path "toleman_2001"}}
+				<li><a href="{{ .RelPermalink }}">{{ .File.BaseFileName }}</a></li>
+				{{ end }}
+			{{ end }}
 			<li>Poem</li>
 			<li>Poem</li>
 			<li>Poem</li>

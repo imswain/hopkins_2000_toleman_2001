@@ -1,0 +1,8 @@
+{{ define "main" }}
+{{ partial "nav.html" . }}
+	<div class="poem">
+	{{ range resources.Match ( printf "images%s/*" ( replace .Path "-" " "))}}
+		<img src="{{ .RelPermalink }}">
+	{{ end }}
+	</div>
+{{ end }}
