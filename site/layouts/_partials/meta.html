@@ -4,5 +4,5 @@
 <link rel="stylesheet" href="{{ $style.Permalink }}">
 {{ $poems := relURL "/poems" }}
 {{ $opts := dict "params" (dict "poemURL" $poems) }}
-{{ $script := resources.Get "js/script.js" | js.Build $opts }}
+{{ $script := resources.Get "script.js" | js.Build $opts }}
 <script defer src="{{ $script.Permalink }}"></script>

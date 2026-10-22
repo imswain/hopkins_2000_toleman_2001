@@ -6,14 +6,9 @@
 		<ul>
 			{{ range .Pages }}
 				{{ if strings.Contains .Path "hopkins_2000"}}
-				<li><a href="{{ .RelPermalink }}">{{ .File.BaseFileName }}</a></li>
+				<li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
 				{{ end }}
 			{{ end }}
-			<li>Poem</li>
-			<li>Poem</li>
-			<li>Poem</li>
-			<li>Poem</li>
-			<li>Poem</li>
 		</ul>
 	</div>
 	<div class="toleman_2001">
@@ -21,14 +16,9 @@
 		<ul>
 			{{ range .Pages }}
 				{{ if strings.Contains .Path "toleman_2001"}}
-				<li><a href="{{ .RelPermalink }}">{{ .File.BaseFileName }}</a></li>
+				<li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
 				{{ end }}
 			{{ end }}
-			<li>Poem</li>
-			<li>Poem</li>
-			<li>Poem</li>
-			<li>Poem</li>
-			<li>Poem</li>
 		</ul>
 	</div>
 </div>

@@ -2,3 +2,6 @@ baseURL = 'https://hopkins2000toleman2001.com/'
 locale = 'en-us'
 title = 'hopkins_2000_toleman_2001'
 disableKinds = [ 'taxonomy', 'term' ]
+[build]
+	[build.cleanDesinationDir]
+		enable = true

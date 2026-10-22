@@ -1,0 +1,10 @@
+{{ range $owner, $poems := hugo.Data.poems }}
+	{{ range $poems }}
+		{{ $page := dict
+			"kind" "page"
+			"path" (replace (printf "%s/%s" $owner .title) " " "-" )
+			"title" .title
+		}}
+		{{ $.AddPage $page }}
+	{{ end }}
+{{ end }}
