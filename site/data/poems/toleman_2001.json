@@ -3,9 +3,42 @@
 		"type": "poem",
 		"title": "THE STORY OF MY LIFE",
 		"pages": [
-			"images/poems/toleman_2001/1.jpeg",
-			"images/poems/toleman_2001/2.jpeg",
-			"images/poems/toleman_2001/3.jpeg"
+			{
+				"src": "/images/poems/toleman_2001/THE STORY OF MY LIFE/1.jpeg",
+				"map": [
+					{
+						"href": "#",
+						"x": "0%",
+						"y": "0%",
+						"width": "20%",
+						"height": "20%"
+					}
+				]
+			},
+			{
+				"src": "/images/poems/toleman_2001/THE STORY OF MY LIFE/2.jpeg",
+				"map": [
+					{
+						"href": "#",
+						"x": "0%",
+						"y": "0%",
+						"width": "20%",
+						"height": "20%"
+					}
+				]
+			},
+			{
+				"src": "/images/poems/toleman_2001/THE STORY OF MY LIFE/3.jpeg",
+				"map": [
+					{
+						"href": "#",
+						"x": "0%",
+						"y": "0%",
+						"width": "20%",
+						"height": "20%"
+					}
+				]
+			}
 		]
 	}
 ]

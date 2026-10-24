@@ -4,6 +4,7 @@
 			"kind" "page"
 			"path" (replace (printf "%s/%s" $owner .title) " " "-" )
 			"title" .title
+			"params" .
 		}}
 		{{ $.AddPage $page }}
 	{{ end }}

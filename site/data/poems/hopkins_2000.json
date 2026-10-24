@@ -3,7 +3,18 @@
 		"type": "poem",
 		"title": "THERE ARE TIMES WHEN IT FEELS LIKE YOU'RE TEACHING MAGIC",
 		"pages": [
-			"images/poems/hopkins_2000/THERE ARE TIMES WHEN IT FEELS LIKE YOU'RE TEACHING MAGIC/1.jpeg"
+			{
+				"src": "/images/poems/hopkins_2000/THERE ARE TIMES WHEN IT FEELS LIKE YOU'RE TEACHING MAGIC/1.jpeg",
+				"map": [
+					{
+						"href": "#",
+						"x": "0%",
+						"y": "0%",
+						"width": "20%",
+						"height": "20%"
+					}
+				]
+			}
 		]
 	}
 ]
