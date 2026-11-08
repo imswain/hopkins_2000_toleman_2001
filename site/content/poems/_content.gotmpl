@@ -1,0 +1,27 @@
+{{ range $owner, $poems := hugo.Data.poems }}
+	{{ $page := dict
+		"kind" "section"
+		"path" $owner
+		"title" $owner
+	}}
+	{{ $.AddPage $page }}
+	{{ range $poems }}
+		{{ if eq .type "poem"}}
+			{{ $page := dict
+				"kind" "page"
+				"path" (replace (printf "%s/%s" $owner .title) " " "-" )
+				"title" .title
+				"params" .
+			}}
+			{{ $.AddPage $page }}
+		{{ else if eq .type "about"}}
+			{{ $page := dict
+				"kind" "page"
+				"path" (printf "%s/about" $owner)
+				"title" (printf "a note from %s" $owner)
+				"params" .
+			}}
+			{{ $.AddPage $page }}
+		{{ end }}
+	{{ end }}
+{{ end }}

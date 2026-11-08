@@ -1,0 +1,14 @@
+{{ define "main" }}
+{{ partial "nav.html" . }}
+<div id="index">
+	<ul>
+		{{ range .Pages }}
+		{{ if ne .Params.type "about" }}
+			<li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+		{{ end }}
+		{{ end }}
+	</ul>
+	<!-- <hr> -->
+	<a href="{{ printf "%s/about" .Permalink }}" class="about-link">a note from the author</a>
+</div>
+{{ end }}
