@@ -1,4 +1,4 @@
-baseURL = 'https://hopkins2000toleman2001.com/'
+baseURL = 'https://imswain.github.io/hopkins_2000_toleman_2001/'
 locale = 'en-us'
 title = 'hopkins_2000_toleman_2001'
 disableKinds = [ 'taxonomy', 'term' ]
