@@ -1,5 +1,13 @@
 [
 	{
+		"type": "about",
+		"pages": [
+			{
+				"src": "images/about/hopkins_2000.jpg"
+			}
+		]
+	},
+	{
 		"type": "poem",
 		"title": "THERE ARE TIMES WHEN IT FEELS LIKE YOU'RE TEACHING MAGIC",
 		"pages": [

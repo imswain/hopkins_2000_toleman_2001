@@ -1,25 +1,14 @@
 {{ define "main" }}
 {{ partial "nav.html" . }}
-<div class="index">
-	<div class="hopkins_2000">
-		<h1>hopkins_2000</h1>
-		<ul>
-			{{ range .Pages }}
-				{{ if strings.Contains .Path "hopkins_2000"}}
-				<li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
-				{{ end }}
-			{{ end }}
-		</ul>
-	</div>
-	<div class="toleman_2001">
-		<h1>toleman_2001</h1>
-		<ul>
-			{{ range .Pages }}
-				{{ if strings.Contains .Path "toleman_2001"}}
-				<li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
-				{{ end }}
-			{{ end }}
-		</ul>
-	</div>
+<div id="index">
+	<ul>
+		{{ range .Pages }}
+		{{ if ne .Params.type "about" }}
+			<li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+		{{ end }}
+		{{ end }}
+	</ul>
+	<!-- <hr> -->
+	<a href="{{ printf "%s/about" .Permalink }}" class="about-link">a note from the author</a>
 </div>
 {{ end }}

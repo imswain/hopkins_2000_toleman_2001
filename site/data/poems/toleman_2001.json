@@ -1,5 +1,13 @@
 [
 	{
+		"type": "about",
+		"pages": [
+			{
+				"src": "images/about/toleman_2001.jpg"
+			}
+		]
+	},
+	{
 		"type": "poem",
 		"title": "THE STORY OF MY LIFE",
 		"pages": [
