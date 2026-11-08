@@ -5,3 +5,6 @@ disableKinds = [ 'taxonomy', 'term' ]
 [build]
 	[build.cleanDesinationDir]
 		enable = true
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'
