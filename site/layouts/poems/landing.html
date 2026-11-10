@@ -1,14 +1,10 @@
 {{ define "main" }}
 <div id="headshot-container">
-	{{ with resources.Get "/images/headshots/hopkins_2000.jpeg" }}
 	<a href="{{ absURL "poems/hopkins_2000" }}">
-		<img class="headshot" src="{{ .RelPermalink }}">
+		<img class="headshot" src="https://pub-54ecb0c369854ed5bb4d4c6483de26ff.r2.dev/images/headshots/hopkins_2000.jpeg">
 	</a>
-	{{ end }}
-	{{ with resources.Get "/images/headshots/toleman_2001.jpeg" }}
 	<a href="{{ absURL "poems/toleman_2001" }}">
-		<img class="headshot" src="{{ .RelPermalink }}">
+		<img class="headshot" src="https://pub-54ecb0c369854ed5bb4d4c6483de26ff.r2.dev/images/headshots/toleman_2001.jpeg">
 	</a>
-	{{ end }}
 </div>
 {{ end }}

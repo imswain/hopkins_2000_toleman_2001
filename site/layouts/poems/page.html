@@ -3,9 +3,7 @@
 	<div class="poem">
 	{{ range .Params.pages }}
 		<div class="page">
-			{{ with resources.Get .src }}
-				<img src="{{ .RelPermalink }}">
-			{{ end }}
+			<img src="{{ .src }}">
 			{{ range .map }}
 				<a href={{ .href }} style="top:{{.y}}; left:{{.x}}; width:{{.width}}; height:{{.height}};"></a>
 			{{ end }}
